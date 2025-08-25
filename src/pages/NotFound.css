@@ -1,0 +1,23 @@
+.notfound {
+  text-align: center;
+  margin: 80px 20px;
+  color: #ff6060;
+}
+
+.notfound-code {
+  font-size: 180px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.notfound-text {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #ff6060;
+}
+
+.notfound-link {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #000;
+}

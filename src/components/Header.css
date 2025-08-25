@@ -1,0 +1,27 @@
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:80px;
+  margin-bottom:20px;
+}
+
+.logo{
+  height:60px;
+}
+
+.nav{
+  display:flex;
+  gap:32px;
+}
+
+.navlink{
+  text-transform:uppercase;
+  font-weight:600;
+  color:#FF6060;
+  text-decoration:none;
+}
+
+.navlink--active{
+  text-decoration:underline;
+}
