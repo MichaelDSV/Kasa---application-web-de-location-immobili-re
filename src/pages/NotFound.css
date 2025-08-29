@@ -1,5 +1,10 @@
 .notfound {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 80px 20px;
   color: #ff6060;
 }
@@ -20,4 +25,15 @@
   font-size: 18px;
   text-decoration: underline;
   color: #000;
+}
+
+.notfound-link:hover {
+  color: #ff6060;
+}
+
+
+@media (max-width: 768px) {
+  .notfound-code {
+    font-size: 96px;
+  }
 }

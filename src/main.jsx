@@ -14,10 +14,10 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <Home /> },       // ← route d'accueil
+      { index: true, element: <Home /> },
       { path: "about", element: <About /> },
       { path: "housing/:id", element: <Housing /> },
-      { path: "*", element: <NotFound /> },     // ← catch-all 404
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "c67ab8a7",
+    "title": "Appartement cosy",
+    "cover": "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+    "location": "Ile de France - Paris",
+    "rating": "4",
+    "host": { "name": "Nathalie Jean", "picture": "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg" },
+    "tags": ["Canal Saint Martin", "République", "Appartement"],
+    "description": "Votre maison loin de chez vous...",
+    "equipments": ["Micro-ondes", "Wi-Fi", "Cuisine équipée"]
+  },
+  {
+    "id": "b9123946",
+    "title": "Studio de charme - Buttes Chaumont",
+    "cover": "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+    "location": "Paris 19e",
+    "rating": "3",
+    "host": { "name": "Franck Maher", "picture": "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg" },
+    "tags": ["Lumière", "Studio"],
+    "description": "Petit studio idéalement situé...",
+    "equipments": ["Parking", "Télévision", "Machine à laver"]
+  }
+]
