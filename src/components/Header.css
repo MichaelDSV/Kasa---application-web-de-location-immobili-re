@@ -1,15 +1,11 @@
-/* Conteneur pleine largeur du header */
 .site-header {
   padding-block: 24px;
-  /* pas de max-width ici */
 }
 
-/* CONTENEUR INTERNE aligné comme la bannière */
 .site-header__row {
-  /* on force la même largeur/centrage que la bannière */
-  max-width: 1280px;      /* ex: 1240px */
-  margin-inline: auto;              /* centre */
-  padding-inline: 0px;             /* même “gouttières” */
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,12 +25,16 @@
   padding-bottom: 3px;
 }
 .site-nav__link:hover,
-.site-nav__link.is-active { text-decoration: underline; }
+.site-nav__link.is-active { 
+  text-decoration: underline; 
+}
 
 .site-nav__link:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 3px;
 }
+
+/* Responsive */
 
 @media (max-width: 768px){
   .site-nav { gap: 24px; }

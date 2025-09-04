@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      {/* IMPORTANT: la ligne ci-dessous doit bien contenir .site-header__row */}
+    
       <div className="site-header__row">
         <img src="./logo.png" alt="Kasa" className="site-logo" />
         <nav className="site-nav">

@@ -10,7 +10,6 @@
   padding: 0 20px;
 }
 
-
 .banner::after{
   content: "";
   position: absolute;

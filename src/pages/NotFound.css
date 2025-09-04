@@ -31,7 +31,7 @@
   color: #ff6060;
 }
 
-
+/*Responsive */
 @media (max-width: 768px) {
   .notfound-code {
     font-size: 96px;

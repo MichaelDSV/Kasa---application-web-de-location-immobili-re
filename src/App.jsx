@@ -9,7 +9,6 @@ export default function App() {
         <Link to="/about">À propos</Link>
       </header>
 
-      {/* Ici s'affichent les pages enfants */}
       <Outlet />
     </div>
   )

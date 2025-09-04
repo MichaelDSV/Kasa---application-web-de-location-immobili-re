@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-/* tablette */
+/* Responsive */
 @media (max-width: 992px){
   .cards{ padding: 40px; }
   .grid{
@@ -22,7 +22,6 @@
   }
 }
 
-/* mobile */
 @media (max-width: 768px){
   .cards{ padding: 20px; }
   .grid{

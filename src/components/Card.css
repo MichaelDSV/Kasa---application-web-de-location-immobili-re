@@ -37,6 +37,8 @@
   border-radius: 12px;
 }
 
+/* Responsive */
+
 @media (max-width: 768px){
   .card{ min-height: 255px; }
 }

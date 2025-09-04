@@ -1,0 +1,20 @@
+.about-stack{
+  max-width: 860px; 
+  margin-inline: auto;
+  display: grid;
+  gap: 24px;
+  padding: 24px 0 64px;
+}
+
+.about-stack .collapse{
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .about-stack{
+    max-width: 100%;
+    padding: 16px 0 48px;
+    gap: 16px;
+  }
+}
