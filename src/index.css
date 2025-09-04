@@ -15,13 +15,11 @@ body{
   color: var(--text);
 }
 
-/* ... ton reset / fonts ... */
 .container{
-  max-width: 1240px;  /* proche Figma */
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 20px; 
 }
-
 
 /* Liens */
 a{ color: var(--primary); text-decoration: none; }

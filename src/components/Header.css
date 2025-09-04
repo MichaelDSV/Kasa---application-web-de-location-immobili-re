@@ -1,33 +1,42 @@
-.header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  height:80px;
-  margin-bottom:20px;
+/* Conteneur pleine largeur du header */
+.site-header {
+  padding-block: 24px;
+  /* pas de max-width ici */
 }
 
-.logo{
-  height:60px;
+/* CONTENEUR INTERNE aligné comme la bannière */
+.site-header__row {
+  /* on force la même largeur/centrage que la bannière */
+  max-width: 1280px;      /* ex: 1240px */
+  margin-inline: auto;              /* centre */
+  padding-inline: 0px;             /* même “gouttières” */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav{
-  display:flex;
-  gap:32px;
-}
+/* Logo */
+.site-logo { height: 40px; display: block; }
 
-.navlink{
-  text-transform:uppercase;
-  font-weight:600;
-  color:#FF6060;
-  text-decoration:none;
-}
+/* Nav */
+.site-nav { display: flex; gap: 40px; }
 
-.navlink:focus-visible {
+.site-nav__link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: none;
+  padding-bottom: 3px;
+}
+.site-nav__link:hover,
+.site-nav__link.is-active { text-decoration: underline; }
+
+.site-nav__link:focus-visible {
   outline: 2px solid var(--primary);
-  outline-offset: 4px;
+  outline-offset: 3px;
 }
 
-
-.navlink--active{
-  text-decoration:underline;
+@media (max-width: 768px){
+  .site-nav { gap: 24px; }
+  .site-logo { height: 32px; }
 }

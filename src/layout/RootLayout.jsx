@@ -1,15 +1,20 @@
-import { Outlet } from "react-router-dom"
-import Header from "../components/Header.jsx"
-import Footer from "../components/Footer.jsx"
+// src/layout/RootLayout.jsx
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 
-export default function RootLayout(){
+export default function RootLayout() {
   return (
-    <div className="container">
-      <Header />
-      <main style={{ minHeight: 320, paddingTop: 12 }}>
-        <Outlet />
-      </main>
+    <>
+      <div className="container">
+        <Header />
+        <main style={{ minHeight: 320, paddingTop: 12 }}>
+          <Outlet />
+        </main>
+      </div>
+
+      {/* Footer full-bleed */}
       <Footer />
-    </div>
-  )
+    </>
+  );
 }

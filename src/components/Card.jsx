@@ -13,7 +13,6 @@ function Card({ id, title, cover }) {
         loading="lazy"
         decoding="async"
       />
-      <div className="card-gradient" />
       <h3 className="card-title">{title}</h3>
     </Link>
   );

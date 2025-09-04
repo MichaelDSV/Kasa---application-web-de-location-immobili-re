@@ -1,54 +1,42 @@
-.card {
+.card{
   position: relative;
   display: block;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
+  min-height: 340px;
+  background: #ddd;
   box-shadow: 0 2px 10px rgba(0,0,0,.06);
   transition: transform .2s ease, box-shadow .2s ease;
-  aspect-ratio: 4 / 3;
 }
-.card:hover { 
-    transform: translateY(-4px); 
-    box-shadow: 0 8px 24px rgba(0,0,0,.12); }
 
-.card-img {
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.card-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.card-gradient {
-  position: absolute; 
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.6) 100%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.card-title {
+.card-title{
   position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 12px;
-  margin: 0;
+  left: 16px; right: 16px; bottom: 12px;
   color: #fff;
   font-weight: 600;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,.4);
-  z-index: 2; /* 👉 au-dessus du gradient */
 }
 
-.card:focus-visible {
-  outline: 3px solid var(--primary, #FF6060);
+/* accessibilité clavier */
+.card:focus-visible{
+  outline: 3px solid var(--primary);
   outline-offset: 3px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .card { transition: none; }
-  .card:hover { transform: none; }
+  border-radius: 12px;
 }
 
 @media (max-width: 768px){
-  .card { aspect-ratio: 3 / 2; }
+  .card{ min-height: 255px; }
 }
