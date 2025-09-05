@@ -1,12 +1,13 @@
-import React, { StrictMode } from "react";
+
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import RootLayout from "./layout/RootLayout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Housing from "./pages/Housing";
-import NotFound from "./pages/NotFound";
+import RootLayout from "./layout/RootLayout.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Housing from "./pages/Housing.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },
       { path: "housing/:id", element: <Housing /> },
-      { path: "*", element: <NotFound /> },
+      { path: "*", element: <NotFound /> }, // ← routes inconnues
     ],
   },
 ]);
