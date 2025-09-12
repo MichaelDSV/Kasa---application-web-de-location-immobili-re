@@ -4,6 +4,12 @@ import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
 import { fetchProperties } from "../services/api";
 
+import "./Housing.css";
+import Tag from "../components/Tag";
+import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
+
+
 export default function Housing() {
   const { id } = useParams();
   const [status, setStatus] = useState("loading");
@@ -59,9 +65,45 @@ useEffect(() => {
   }
 
   return (
-    <main className="container housing">
-      <Slideshow images={property.pictures} alt={`Photos de ${property.title}`} />
-      {}
-    </main>
-  );
+  <main className="housing_container housing">
+  <Slideshow images={property.pictures} alt={`Photos de ${property.title}`} />
+
+  <section className="housing_top">
+    <div className="housing_main">
+      <h1 className="housing__title">{property.title}</h1>
+      <p className="housing__location">{property.location}</p>
+
+      <div className="housing__tags">
+        {property.tags?.map(t => <Tag key={t}>{t}</Tag>)}
+      </div>
+    </div>
+
+    <div className="housing_side">
+      <div className="host">
+        <span className="host__name">{property.host?.name}</span>
+        <img
+          className="host__picture"
+          src={property.host?.picture}
+          alt={`Photo de ${property.host?.name}`}
+        />
+      </div>
+
+      <Rating value={property.rating} />
+    </div>
+  </section>
+
+  <section className="housing_bottom">
+    <Collapse title="Description">
+      <p>{property.description}</p>
+    </Collapse>
+
+    <Collapse title="Équipements">
+      <ul>
+        {property.equipments?.map(eq => <li key={eq}>{eq}</li>)}
+      </ul>
+    </Collapse>
+  </section>
+</main>
+
+);
 }

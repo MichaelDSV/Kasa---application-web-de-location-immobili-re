@@ -39,35 +39,10 @@ a:hover{ text-decoration: underline; }
 }
 
 /* Header */
-.header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  height: 80px;
-}
-
 .header__brand{
   display:flex;
   align-items:center;
   gap: 12px;
-}
-
-.logo{
-  display:block;
-  height: 40px;
-}
-
-.nav{
-  display:flex;
-  gap: 32px;
-}
-
-.navlink{
-  text-transform: uppercase;
-  letter-spacing: .02em;
-  font-weight: 600;
-  color: var(--primary);
-  text-decoration: none;
 }
 
 .navlink--active{
