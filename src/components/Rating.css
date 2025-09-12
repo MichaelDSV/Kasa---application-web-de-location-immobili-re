@@ -4,9 +4,11 @@
   line-height: 1;
 }
 .rating .star {
-  font-size: 18px;
+  font-size: 2.2rem;
   color: #e3e3e3;
+  margin-right: 4px;
 }
+
 .rating .star.filled {
   color: var(--primary, #ff6060);
 }

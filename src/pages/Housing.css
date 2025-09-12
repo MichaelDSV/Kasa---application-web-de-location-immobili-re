@@ -25,18 +25,18 @@
 /* zone gauche */
 .housing_main{ flex: 1 1 auto; }
 
-.housing__title{
+.housing_title{
   margin: 0 0 8px;
   font-size: clamp(18px, 2.6vw, 36px);
   line-height: 1.2;
   color: #ff6060;
 }
 
-.housing__location{
+.housing_location{
   margin: 0 0 14px;
-  font-weight: 600;
   color: #ff6060;
 }
+
 
 /* tags */
 .housing__tags{
@@ -61,18 +61,19 @@
   align-items: center;
   gap: 12px;
 }
-.host__name{
-  max-width: 140px;
-  text-align: right;
-  font-weight: 600;
-  color: var(--primary);
+.host_name {
+  color: #ff6060;
+  margin-right: 8px;
 }
-.host__picture{
+
+.host_picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px;
 }
+
 
 /* bas de page */
 .housing_bottom{
