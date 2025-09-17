@@ -5,7 +5,11 @@ import "./Card.css";
 
 function Card({ id, title, cover }) {
   return (
-    <Link to={`/housing/${id}`} className="card" aria-label={`Ouvrir le logement “${title}”`}>
+    <Link
+      to={`/housing/${id}`}
+      className="card"
+      aria-label={`Ouvrir le logement “${title}”`}
+    >
       <img
         src={cover}
         alt={`Photo du logement ${title}`}

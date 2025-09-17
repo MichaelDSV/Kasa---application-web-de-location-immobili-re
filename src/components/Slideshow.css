@@ -1,4 +1,4 @@
-.slideshow{
+.slideshow {
   position: relative;
   display: block;
   width: 100%;
@@ -8,7 +8,7 @@
   margin-block: 20px;
 }
 
-.slideshow img{
+.slideshow img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -16,7 +16,7 @@
 }
 
 /* Boutons nav */
-.slideshow .nav{
+.slideshow .nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -28,30 +28,42 @@
   line-height: 1;
   cursor: pointer;
   user-select: none;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
 }
-.slideshow .prev{ left: 12px; }
-.slideshow .next{ right: 12px; }
+.slideshow .prev {
+  left: 12px;
+}
+.slideshow .next {
+  right: 12px;
+}
 
 /* Compteur */
-.slideshow .counter{
+.slideshow .counter {
   position: absolute;
   left: 50%;
-  bottom: 14px;
+  bottom: 16px;
   transform: translateX(-50%);
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  font-size: 16px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   z-index: 2;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
 }
 
-@media (max-width: 768px){
-  .slideshow{
+@media (max-width: 768px) {
+  .slideshow {
     height: auto;
     aspect-ratio: 343 / 255;
     max-height: 255px;
   }
-  .slideshow .nav{ font-size: 34px; padding: 6px 10px; }
-  .slideshow .counter{ font-size: 12px; bottom: 10px; }
+  .slideshow .nav {
+    font-size: 34px;
+    padding: 6px 10px;
+  }
+  .slideshow .counter {
+    font-size: 12px;
+    bottom: 10px;
+  }
 }

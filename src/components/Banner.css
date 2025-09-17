@@ -1,41 +1,54 @@
-.banner{
+.banner {
   position: relative;
   height: 223px;
   border-radius: 25px;
   background-size: cover;
-  background-position : center ;
+  background-position: center;
   overflow: hidden;
   max-width: 1240px;
   margin: 24px auto;
   padding: 0 20px;
 }
 
-.banner::after{
+.banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.banner-title{
-  position: relative; 
+.banner-title {
+  position: relative;
   color: white;
-  font-size: 48px; 
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 500;
   line-height: 1.1;
   text-align: center;
-  padding: 50px ;
+  padding: 50px;
+  z-index: 1;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
 }
 
-@media (max-width: 768px){
-  .banner{
+@media (max-width: 768px) {
+  .banner {
     height: 111px;
     border-radius: 10px;
   }
-  .banner-title{
+
+  .banner-title {
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    padding-left: 16px;
+    padding: 30px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    text-align: left;
+    font-size: 24px;
+    width: 85%;
   }
 }

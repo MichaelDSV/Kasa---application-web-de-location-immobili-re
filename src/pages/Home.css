@@ -1,9 +1,11 @@
-.cards{
+.cards {
   max-width: 1240px;
   margin: 24px auto;
   background: #f7f7f7;
   border-radius: 25px;
   padding: 40px 20px;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
 }
 
 .grid {
@@ -14,17 +16,21 @@
 }
 
 /* Responsive */
-@media (max-width: 992px){
-  .cards{ padding: 40px; }
-  .grid{
+@media (max-width: 992px) {
+  .cards {
+    padding: 40px;
+  }
+  .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 }
 
-@media (max-width: 768px){
-  .cards{ padding: 20px; }
-  .grid{
+@media (max-width: 768px) {
+  .cards {
+    padding: 20px;
+  }
+  .grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }

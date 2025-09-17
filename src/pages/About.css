@@ -1,18 +1,33 @@
-.about-stack{
-  max-width: 860px; 
+.about-stack {
+  max-width: 1024px;
   margin-inline: auto;
   display: grid;
-  gap: 24px;
-  padding: 24px 0 64px;
+  gap: 10px;
+  padding: 24px;
 }
 
-.about-stack .collapse{
+.collapse-btn__label {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.collapse-panel p {
+  color: var(--primary);
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-stack .collapse {
   width: 100%;
 }
 
 /* Responsive */
-@media (max-width: 768px){
-  .about-stack{
+@media (max-width: 768px) {
+  .about-stack {
     max-width: 100%;
     padding: 16px 0 48px;
     gap: 16px;

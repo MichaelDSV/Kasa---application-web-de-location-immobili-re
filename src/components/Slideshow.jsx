@@ -14,35 +14,26 @@ export default function Slideshow({ images = [], alt = "" }) {
     <div className="slideshow">
       {/* Flèche gauche */}
       {!single && (
-        <button
-          className="nav prev"
-          onClick={prev}
-          aria-label="Précédent"
-        >
+        <button className="nav prev" onClick={prev} aria-label="Précédent">
           ❮
         </button>
       )}
 
       {/* Image */}
-      <img
-        src={images[i]}
-        alt={`${alt} - photo ${i + 1}/${images.length}`}
-      />
+      <img src={images[i]} alt={`${alt} - photo ${i + 1}/${images.length}`} />
 
       {/* Flèche droite */}
       {!single && (
-        <button
-          className="nav next"
-          onClick={next}
-          aria-label="Suivant"
-        >
+        <button className="nav next" onClick={next} aria-label="Suivant">
           ❯
         </button>
       )}
 
       {/* Compteur */}
       {!single && (
-        <div className="counter">{i + 1}/{images.length}</div>
+        <div className="counter">
+          {i + 1}/{images.length}
+        </div>
       )}
     </div>
   );

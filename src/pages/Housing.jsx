@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
@@ -53,7 +52,7 @@ export default function Housing() {
       </main>
     );
   }
-  
+
   // redirection si ID invalide
   if (status === "notfound") {
     return <Navigate to="/notfound" replace />;
@@ -62,13 +61,15 @@ export default function Housing() {
   // En cas d’erreur réseau, rediriger vers 404
   if (status === "error") {
     return <Navigate to="/notfound" replace />;
-
   }
 
   // Rendu "OK"
   return (
     <main className="housing_container housing">
-      <Slideshow images={property.pictures} alt={`Photos de ${property.title}`} />
+      <Slideshow
+        images={property.pictures}
+        alt={`Photos de ${property.title}`}
+      />
 
       <section className="housing_top">
         <div className="housing_main">

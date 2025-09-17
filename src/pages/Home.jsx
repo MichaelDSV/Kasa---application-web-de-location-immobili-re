@@ -39,7 +39,6 @@ export default function Home() {
   }, []);
 
   return (
-    
     <div>
       <Banner image={bannerHome} title="Chez vous, partout et ailleurs" />
 

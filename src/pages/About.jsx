@@ -26,14 +26,13 @@ const sections = [
   },
 ];
 
-export default function About(){
+export default function About() {
   return (
     <main className="about-page">
-      
       <Banner image={aboutImg} className="banner banner--about" />
-      
+
       <section className="container about-stack">
-        {sections.map(s => (
+        {sections.map((s) => (
           <Collapse key={s.title} title={s.title}>
             <p>{s.content}</p>
           </Collapse>
