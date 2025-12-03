@@ -16,25 +16,23 @@ export default function Home() {
     async function load() {
       setLoading(true);
       setError("");
+
       try {
         const data = await fetchProperties({ signal: ctrl.signal });
         setProperties(data);
       } catch (e) {
-        if (e?.name === "AbortError") return;
 
-        try {
-          const local = await import("../mocks/properties.json");
-          setProperties(local.default ?? local);
-          setError("API indisponible — données locales affichées.");
-        } catch {
-          setError("Impossible de charger les logements.");
-        }
+        if (e.name === "AbortError") return;
+
+        setError("Impossible de charger les logements.");
       } finally {
         setLoading(false);
       }
     }
 
     load();
+
+  
     return () => ctrl.abort();
   }, []);
 
